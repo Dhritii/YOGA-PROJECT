@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>XYZ Yoga Centre/Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script src="register.js" defer></script>
+  </head>
+  <body>
+
+    <!----------------NAVIGATION BAR----------------------->
+    <header>
+        <nav class="navbar">
+            <div class="logo">XYZ</div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="register.html">Resister Now</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="register">
+    <div class="quote">
+        <p>"Yoga is the journey of the self, throught the self, to the self."</p><br>
+        <h3>-Bhagavad Gita</h3>
+    </div>
+    
+ <main>
+
+    
+    <!--REGISTRATION FORM-->
+    <div class="container">
+      <h1 class="form-title">Registration</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="firstName">First Name</label>
+            <input type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter First Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="lastname">Last Name</label>
+            <input type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Enter Last Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="class">Choose A Class:</label>
+            <select name="class" id="class">
+              <option value="class">Class-1</option>
+              <option value="class">Class-2</option>
+              <option value="class">Class-3</option>
+              <option value="class">Class-4</option>
+            </select>
+          </div>
+         
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+</main>
+</section>
+  </body>
+</html>

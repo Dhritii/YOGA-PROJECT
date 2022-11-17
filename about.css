@@ -1,0 +1,412 @@
+/*--------------FONT LINKS---------*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*------------------NAVIGATION BAR--------------*/
+.navbar {
+    display: flex;
+    position: relative;
+    background-color: #B1DCCE;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+    font-family: 'Lobster Two', cursive;
+    padding: 0 1rem ;
+    line-height: 60px;
+    font-size: 2.5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;    
+}
+
+.navbar-links li {
+    list-style: none;
+    background-color: #b1dcce;   
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+   
+}
+
+.navbar-links li:hover {
+    background-color: #96d8c2;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;    
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) 
+{
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        
+        
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+/*------------------ABOUT--------------*/
+.about{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.left {
+    width: 100%;
+    height: 570px;
+    background: url("https://images.pexels.com/photos/8436728/pexels-photo-8436728.jpeg")
+      no-repeat center / cover;
+   
+  }
+
+.right {
+    /*width: 50%;*/width: 70%;
+    min-height: 450px;
+    background-color: #7f908bae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    margin-left: -150px;
+
+  }
+
+  .right h1 {
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    color: #000000;
+
+  }
+
+  .right p {
+    margin: 20px 0;
+    line-height: 25px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 90%;
+      margin: 40px 20px;
+    }
+    .left {
+      width: 100%;
+      height: 400px;
+    }
+    .right {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+  }
+  /*------------------FOUNDER---------------*/
+#founder{
+  padding: 7rem 7rem;
+  
+  
+}
+
+#founder h1{
+  text-align: center;
+  color: #000000;
+  font-family: 'Alex Brush', cursive;
+  font-size: 3rem;
+  opacity: .8;
+}
+
+  .founder {
+    border: 2px solid rgb(19, 18, 18);
+    background-color: #b1dcce26;
+    height: fit-content;
+    padding: 16px;
+
+    
+  }
+  .founder-content{
+    padding: 2rem;
+  }
+  
+  
+  
+  .founder img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .founder h2{
+    font-family: "Alex Brush", cursive;
+    color: rgb(127, 144, 139);
+  }
+  
+.founder p{
+  color: rgba(34, 37, 36, 0.763);
+font-family: Lora, serif;
+font-size: 16px;
+font-weight: lighter;
+}
+
+  @media (max-width: 500px) {
+    .founder {
+        text-align: center;
+    }
+    .founder img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
+
+
+
+
+
+  /*------------------TRAINERS--------------*/
+  #trainers{
+    padding-top: 2rem;
+  }
+
+  .trainers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  #trainers h1{
+    text-align: center;
+    color: #000000;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    opacity: .8;
+  }
+
+  .card{
+    padding: 1rem; 
+    width: 300px;
+    margin: 10px;
+    border-radius:15px ;
+    height: fit-content;
+  }
+  
+  .card img{
+    height: 50%;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 15px ;
+    padding: 2rem;
+  }
+  
+  .trainers :hover{
+    background-color: #b1dcce59;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 1s ease;
+  }
+
+  .card h2{
+    text-align: center;
+    font-family: "Alex Brush", cursive;
+    color: rgb(127, 144, 139);
+  }
+
+  .card p{
+    text-align: center;
+    color: rgb(109, 118, 115);
+    font-family: Lora, serif;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+
+ /*------------------NEWSLETTER--------------*/
+ #newsletter{
+    padding: 7rem ;
+ }
+  
+  .wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #subscribebox{
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    background: #579c89c9;
+    text-align: center;
+    border-radius: 4px;
+    padding: 60px 20px;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+ 
+  
+  h3{
+    color: #040404;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  #email-input{
+    width: 450px;
+    max-width: 100%;
+    font-family: inherit;
+    color: #346655;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 0px;
+    padding: 15px 0px 15px 20px;
+    font-size: 14px;
+    background: #F0F4EF;
+  }
+  
+  
+  
+  #subscribe-button{
+    border: 0px;
+    width: 150px;
+    max-width: 100%;
+    font-size: 700;
+    padding: 15px;
+    font-size: 14px;
+    color: #F0F4EF;
+    font-family: inherit;
+    background: #3d8750;
+    cursor: pointer;
+    border-radius: 0px 2px 2px 0px;
+   
+    transition: all 0.2s;
+  }
+  
+  #subscribe-button:hover{
+    background: #46877b;
+  }
+  
+  @media screen and (max-width: 700px) {
+    #subscribe-button{
+      width: 98%;
+      margin: 5px;
+      border-radius: 2px;
+    }
+    #email-input{
+      width: 98%;
+      margin: 5px;
+      text-align: center;
+    }
+    #subscribebox{
+      width: 100%;
+    }
+  }

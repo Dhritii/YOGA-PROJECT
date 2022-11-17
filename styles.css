@@ -1,0 +1,272 @@
+/*--------------FONT LINKS---------*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*------------------NAVIGATION BAR--------------*/
+.navbar {
+    display: flex;
+    position: relative;
+    background-color: #B1DCCE;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+    font-family: 'Lobster Two', cursive;
+    padding: 0 1rem ;
+    line-height: 60px;
+    font-size: 2.5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;    
+}
+
+.navbar-links li {
+    list-style: none;
+    background-color: #b1dcce;   
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+}
+
+.navbar-links li:hover {
+    background-color: #96d8c2;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;    
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) 
+{
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/*------IMAGE SECTION---*/
+.container{
+    height: 20rem;
+    width: 100%;
+    margin: auto;        
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    
+}
+
+.slideContainer {
+    display: flex;
+    width: calc(250px*18);
+    animation: scroll 20s linear infinite;
+
+}
+
+.slide-image {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    perspective: 100px;
+
+}
+
+.slide-image img {
+    transition: transform 1s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px*9));
+    }
+}
+/*---------------HERO SECTION--------------*/
+#heroSection{
+    padding: 5rem;
+    height: fit-content;
+    text-align: center;
+
+}
+
+#heroText1{
+    color: #7f908b;
+    font-family: 'Alex Brush', cursive;
+    font-size: 40px;
+
+}
+
+#heroText2{
+    font-family: sans-serif;
+    color: #7CB2A1;
+    font-style: bolder;
+    font-size: 32px;
+    
+}
+
+#heroDescription{
+    color: #6D7673;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 2rem 3rem;
+}
+
+
+#register{
+
+background: linear-gradient(180deg,#50f2e4 0%, #32cc9c 48.96% ,rgb(99 184 143)99.99%);
+border-radius: 10px;
+border:0;
+width: 15rem;
+padding:.5rem 0;
+font-family: 'Space Grotesk';
+font-weight: 700;
+font-size: 20px;
+color: white;
+opacity: 60%;
+
+
+}
+
+#register:hover{
+  cursor: pointer;
+  scale: 103%;
+  
+  transition: 500ms;
+}
+
+
+@media (max-width: 800px) {
+  #heroSection{
+    padding: 0;
+  }
+}
+
+
+
+
+
+/*-------------------BENEFITS-------------*/
+#benefits{
+    padding: 3rem 20rem;
+    opacity: .8;
+
+}
+
+
+   
+.benefits h1{
+    color: #000000;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.benefits ul li{
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem 6rem;
+    
+    background-image: url("https://images.pexels.com/photos/4709448/pexels-photo-4709448.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4709448.jpg&fm=jpg&_gl=1*4f7udm*_ga*MTEwNDA2OTExMS4xNjY3NDA5MzE0*_ga_8JE65Q40S6*MTY2NzcyMDkwMy45LjEuMTY2NzcyMDk1MC4wLjAuMA..");
+    border-radius: 0.4rem;
+    
+}
+
+.benefits ul li h2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;padding: 0;
+}
+
+@media (max-width: 1000px) {
+  #benefits{
+    padding: 0;
+  }
+
+}
+
+
+
+
+
+
+ 
